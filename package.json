@@ -12,5 +12,8 @@
     "xrexonx"
   ],
   "author": "Rexon A. De los Reyes <rexondelosreyes88@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
