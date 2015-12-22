@@ -1,0 +1,16 @@
+{
+  "name": "dateDiff",
+  "version": "1.0.0",
+  "description": "A simple and lightweight date helper that calculates the differnce bettween two dates ~12222015",
+  "main": "index.js",
+  "keywords": [
+    "date",
+    "helper",
+    "date-helper",
+    "dateDiff",
+    "javascript",
+    "xrexonx"
+  ],
+  "author": "Rexon A. De los Reyes <rexondelosreyes88@gmail.com>",
+  "license": "MIT"
+}
