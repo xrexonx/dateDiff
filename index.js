@@ -14,27 +14,12 @@ var Rexon = (function () {
             return date;
         } else {
             console.log('date is invalid format');
+
             return false;
         }
     }
 
-
-    function _getDateDiff(date1, date2) {
-
-        //milliseconds per day.
-        var MSD = 1000 * 3600 * 24;
-        var date1 = _setDate(date1);
-        var date2 = _setDate(date2);
-
-        var timeDiff = Math.abs(date1.getTime() - date2.getTime());
-        var diffDays = Math.ceil(timeDiff / (MSD));
-
-        return humanise(diffDays);
-
-    }
-
-
-    function humanise(diff) {
+    function _humanise(diff) {
         // The string we're working with to create the representation
         var str = '';
         // Map lengths of `diff` to different time periods
@@ -56,6 +41,20 @@ var Rexon = (function () {
         }
 
         return str;
+    }
+
+    function _getDateDiff(date1, date2) {
+
+        //milliseconds per day.
+        var MSD = 1000 * 3600 * 24;
+        var date1 = _setDate(date1);
+        var date2 = _setDate(date2);
+
+        var timeDiff = Math.abs(date1.getTime() - date2.getTime());
+        var diffDays = Math.ceil(timeDiff / (MSD));
+
+        return _humanise(diffDays);
+
     }
 
     return {
