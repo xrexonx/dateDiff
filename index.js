@@ -61,7 +61,7 @@ var rDate = (function () {
 
 })();
 
-console.log(rDate.getDiff("07/19/2015", "12/23/2015"));
+console.log(rDate.getDiff("02/13/2015", "12/23/2015"));
 
 
 if (typeof module !== "undefined") {
