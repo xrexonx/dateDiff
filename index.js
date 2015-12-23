@@ -53,7 +53,6 @@ var Rexon = (function () {
         var diffDays = Math.ceil(timeDiff / (MSD));
 
         return _humanise(diffDays);
-
     }
 
     return {
@@ -62,7 +61,9 @@ var Rexon = (function () {
 
 })();
 
-// console.log(Rexon.dateDiff("12/19/2010", "07/19/2010"));
-  if (typeof module !== "undefined") {
-    module.exports = Rexon;
-  }
+console.log(Rexon.dateDiff("07/19/2015", "12/23/2015"));
+
+
+if (typeof module !== "undefined") {
+	module.exports = Rexon;
+}
