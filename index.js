@@ -14,7 +14,6 @@ var Rexon = (function () {
             return date;
         } else {
             console.log('date is invalid format');
-
             return false;
         }
     }
@@ -63,6 +62,7 @@ var Rexon = (function () {
 
 })();
 
-console.log(Rexon.dateDiff("12/19/2010", "07/19/2010"));
-
-// module.exports = Rexon;
+// console.log(Rexon.dateDiff("12/19/2010", "07/19/2010"));
+  if (typeof module !== "undefined") {
+    module.exports = Rexon;
+  }
