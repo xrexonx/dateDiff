@@ -1,4 +1,4 @@
-var Rexon = (function () {
+var rDate = (function () {
 
     function _setDate(date) {
         var date = _checkIfValid(date);
@@ -56,14 +56,14 @@ var Rexon = (function () {
     }
 
     return {
-        dateDiff: _getDateDiff
+        getDiff: _getDateDiff
     };
 
 })();
 
-console.log(Rexon.dateDiff("07/19/2015", "12/23/2015"));
+console.log(rDate.getDiff("07/19/2015", "12/23/2015"));
 
 
 if (typeof module !== "undefined") {
-	module.exports = Rexon;
+	module.exports = rDate;
 }
