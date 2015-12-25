@@ -1,5 +1,5 @@
 ### DateDiff
-
+A simple and lightweight javascript date helper that calculates the difference between two dates.
 
 #### Sample
 
