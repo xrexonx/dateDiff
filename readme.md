@@ -4,6 +4,14 @@
 
 A simple and lightweight javascript date helper that calculates the difference between two dates.
 
+## Installation
+
+Install via bower
+
+```sh
+bower install dateDiff --save
+```
+
 ## Sample usage
 
 ```js
