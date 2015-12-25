@@ -13,6 +13,17 @@
   ],
   "author": "Rexon A. De los Reyes <rexondelosreyes88@gmail.com>",
   "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower.json",
+    "gulpfile.js",
+    "package.json",
+    "readme.md",
+    "resources.txt",
+    "LICENSE"
+  ],
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-copy-rex": "^1.2.4"
