@@ -1,8 +1,13 @@
 var rDate = (function () {
 
     function _setDate(date) {
-        var date = _checkIfValid(date);
-        return new Date(date);
+        return new Date(_checkIfValid(date));
+    }
+
+    function _rDateException(message) {
+        this.toString = function() {
+            return 'DateDiffException : ' + message;
+        };
     }
 
     function _checkIfValid(date) {
@@ -13,8 +18,8 @@ var rDate = (function () {
         if (date.match(regEx)) {
             return date;
         } else {
-            console.log('date is invalid format');
-            return false;
+            console.log('Invalid date format.');
+            throw new _rDateException('Invalid date format.');
         }
     }
 
@@ -42,12 +47,12 @@ var rDate = (function () {
         return str;
     }
 
-    function _getDateDiff(date1, date2) {
+    function _getDateDiff(from, to) {
 
         //milliseconds per day.
         var MSD = 1000 * 3600 * 24;
-        var date1 = _setDate(date1);
-        var date2 = _setDate(date2);
+        var date1 = _setDate(from);
+        var date2 = _setDate(to);
 
         var timeDiff = Math.abs(date1.getTime() - date2.getTime());
         var diffDays = Math.ceil(timeDiff / (MSD));
@@ -61,9 +66,7 @@ var rDate = (function () {
 
 })();
 
-console.log(rDate.getDiff("02/13/2015", "12/23/2015"));
-
-
+//console.log(rDate.getDiff("02/13/2015", "12/23/2015"));
 if (typeof module !== "undefined") {
 	module.exports = rDate;
 }

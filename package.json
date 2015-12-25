@@ -15,6 +15,6 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-copy-rex": "^1.2.3"
+    "gulp-copy-rex": "^1.2.4"
   }
 }

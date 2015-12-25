@@ -1,3 +1,4 @@
 http://stackoverflow.com/questions/3224834/get-difference-between-2-dates-in-javascript
 http://stackoverflow.com/questions/8942895/convert-a-number-of-days-to-days-months-and-years-with-jquery
 http://stackoverflow.com/questions/276479/javascript-how-to-validate-dates-in-format-mm-dd-yyyy
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
