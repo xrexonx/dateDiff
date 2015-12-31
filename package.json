@@ -1,7 +1,7 @@
 {
   "name": "rdatediff",
   "version": "1.0.0",
-  "description": "A simple and lightweight date helper that calculates the differnce bettween two dates ~12222015",
+  "description": "A simple and lightweight date helper that calculates the difference between two dates ~12222015",
   "main": "index.js",
   "keywords": [
     "date",
