@@ -49,24 +49,42 @@ var rDate = (function () {
 
     function _getDateDiff(from, to) {
 
-        //milliseconds per day.
-        var MSD = 1000 * 3600 * 24;
-        var date1 = _setDate(from);
-        var date2 = _setDate(to);
+        var MSD, date1, date2, timeDiff, diffDays;
 
-        var timeDiff = Math.abs(date1.getTime() - date2.getTime());
-        var diffDays = Math.ceil(timeDiff / (MSD));
+        //milliseconds per day.
+        MSD   = 1000 * 3600 * 24;
+        date1 = _setDate(from);
+        date2 = _setDate(to);
+
+        timeDiff = Math.abs(date1.getTime() - date2.getTime());
+        diffDays = Math.ceil(timeDiff / (MSD));
+
+        return diffDays;
+        
+    }
+
+    function _getDateDiffHumanize (from, to) {
+
+        var diffDays;
+
+        diffDays = _getDateDiff(from, to);
 
         return _humanise(diffDays);
+
     }
 
     return {
-        getDiff: _getDateDiff
+        getDiffDays: _getDateDiff,
+        getDiff: _getDateDiffHumanize
     };
 
 })();
 
-//console.log(rDate.getDiff("02/13/2015", "12/23/2015"));
+
+// console.log(rDate.getDiff("02/13/2015", "12/23/2015"));
+// console.log(rDate.getDiffDays("02/13/2015", "12/23/2015"));
+
+//For NPM Usage
 if (typeof module !== "undefined") {
 	module.exports = rDate;
 }
