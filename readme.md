@@ -22,9 +22,14 @@ bower install dateDiff --save
 var date1 = "02/13/2015";
 var date2 = "12/23/2015";
 
-rDate.getDiff(date1, date2);
+var getDiff = rDate.getDiff(date1, date2);
+var getDays = rDate.getDiffDays(date1, date2);
 
+console.log(getDiff);
 //Outputs => 10 months 13 days
+
+console.log(getDays + 'days');
+//Outputs => 313 days
 ```
 
 ## License
